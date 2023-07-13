@@ -11,6 +11,12 @@ const CategoryListData=[
         value:'restaurant',
         icon:'/food.png'
     },
+    {
+        id:3,
+        name:'Cafe',
+        value:'cafe',
+        icon:'/cafe.png'
+    },
   
 ]
 

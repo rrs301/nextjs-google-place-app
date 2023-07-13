@@ -10,7 +10,7 @@ export default async function handler(req,res){
             "?fields=formatted_address,name,rating,opening_hours,geometry,photos"+
             "&input="+req.query.searchtext+
             "&inputtype=textquery"+
-            "&locationbias=circle:10000@"+req.query.lat+","+req.query.lng+
+            "&locationbias=circle:20000@"+req.query.lat+","+req.query.lng+
             "&key="+GOOGLE_API_KEY);
 
         const data=responce.data;
