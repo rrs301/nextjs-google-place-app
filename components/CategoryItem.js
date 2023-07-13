@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 
-function CategoryItem({category}) {
+function CategoryItem({category,selectedCategory=null}) {
+
   return (
-    <div className='flex flex-col items-center bg-purple-100
+    <div className={`flex flex-col items-center bg-purple-100
   p-3 rounded-2xl hover:scale-105 
   transition-all w-[90px]
     duration-100
-    cursor-pointer'>
+    cursor-pointer ${selectedCategory?.name==category.name?'bg-purple-200':null}`}>
         <Image src={category.icon}
         alt={category.name}
         width={35}

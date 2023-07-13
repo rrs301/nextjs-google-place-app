@@ -4,7 +4,8 @@ import CategoryItem from './CategoryItem';
 
 function CategoryList({setSelectedCategory}) {
     const [category,setCategory]=useState();
-  
+    const [selectedCategory,setSelectedCategory_]=useState();
+    
     useEffect(()=>{
         setCategory(Data.CategoryListData)
     },[])
@@ -14,8 +15,8 @@ function CategoryList({setSelectedCategory}) {
         font-bold mb-3'>Select Your Fav Category</h2>
        {category? <div className='flex gap-6 mb-5'>
             {category?.map((item,index)=>(
-                <div key={index} onClick={()=>setSelectedCategory(item.value)}>
-                    <CategoryItem category={item} />
+                <div key={index} onClick={()=>{setSelectedCategory(item.value);setSelectedCategory_(item)}}>
+                    <CategoryItem category={item} selectedCategory={selectedCategory} />
                 </div>
             ))}
         </div>:null}
