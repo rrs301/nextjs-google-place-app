@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
+    "axios": "^1.4.0",
+    "html-to-image": "^1.11.11",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "eslint": "8.44.0",
-    "eslint-config-next": "13.4.9"
+    "eslint-config-next": "13.4.9",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2"
   }
 }
