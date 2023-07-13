@@ -18,7 +18,7 @@ function BusinessList({businessListData}) {
       setCount(0);
     },[businessListData])
 
-    console.log("BusinessList",businessListData);
+    
   return (
     <div>
       <h2 className="text-[20px] mt-3 font-bold mb-3

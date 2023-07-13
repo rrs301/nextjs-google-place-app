@@ -25,7 +25,7 @@ export default function Home() {
     if(userLocation)
       getNearByPlace('restaurant');
     
-    console.log(userLocation)
+   
   },[userLocation])
 
   const getNearByPlace=(category)=>{

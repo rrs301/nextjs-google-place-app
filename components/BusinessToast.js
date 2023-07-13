@@ -19,7 +19,7 @@ function BusinessToast({userLocation}) {
 
     
     const calculateDistance = (lat1, lon1, lat2, lon2) => {
-        console.log(lat1, lon1, lat2, lon2)
+     
           const earthRadius = 6371; // in kilometers
       
           const degToRad = (deg) => {
@@ -36,7 +36,7 @@ function BusinessToast({userLocation}) {
           const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       
           const distance = earthRadius * c;
-          console.log(distance.toFixed(1))
+         
           setDistance(distance.toFixed(1))
           return distance.toFixed(2); // Return the distance with 2 decimal places
         };

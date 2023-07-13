@@ -10,7 +10,7 @@ function Marker({ userLocation }) {
         businessList.map(
           (business, index) =>
             index <= 4 && (
-              <MarkerF
+              <MarkerF key={index}
                 position={business.geometry.location}
                 icon={{
                   url: "/location-pin.png",
